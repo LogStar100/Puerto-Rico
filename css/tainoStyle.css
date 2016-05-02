@@ -1,0 +1,259 @@
+h1 {
+	font-family: Avenir;
+	font-weight: 900;
+	font-size: 3em;
+}
+
+h3, a {
+	font-family: Avenir;
+	font-weight: 400;
+	font-size: 2em;
+}
+}
+
+@font-face {
+	font-family: Avenir;
+	font-weight: 900;
+	src: url('../fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirLTStd-Black.woff') format('woff'), url('../fonts/AvenirLTStd-Black.ttf') format('truetype'), url('../fonts/AvenirLTStd-Black.svg#svgAvenirLTStd-Black') format('svg');
+}
+
+@font-face {
+	font-family: Avenir;
+	font-weight: 400;
+	src: url('../fonts/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirLTStd-Book.woff') format('woff'), url('../fonts/AvenirLTStd-Book.ttf') format('truetype'), url('../fonts/AvenirLTStd-Book.svg#svgAvenirLTStd-Book') format('svg');
+}
+
+@font-face {
+	font-family: Novecento;
+	font-weight: 700;
+	src: url('../fonts/Novecento Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Novecento Bold.woff') format('woff'), url('../fonts/Novecento Bold.ttf') format('truetype'), url('../fonts/Novecento Bold.svg#svgNovecento Bold') format('svg');
+}
+
+@font-face {
+	font-family: Archer Pro;
+	font-weight: 700;
+	src: url('../fonts/ArcherPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ArcherPro-Bold.woff') format('woff'), url('../fonts/ArcherPro-Bold.ttf') format('truetype'), url('../fonts/ArcherPro-Bold.svg#svgArcherPro-Bold') format('svg');
+}
+
+html, body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#skrollr-body {
+	position: fixed;
+	width: 100vw;
+}
+
+.landingBackground {
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
+	bottom: 0;
+}
+
+#splash {
+	bottom: -12vh;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	position: absolute;
+	color: white;
+}
+
+#subHeader {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	z-index: 2;
+	bottom: -16vh;
+	color: white;
+}
+
+.backgroundRectangle {
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+	bottom: -15vh;
+	background-color: #333;
+	height: 16vh;
+}
+
+.tainoHeader, .barcelonaHeader {
+	font-family: Novecento;
+	font-weight: 700;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+	z-index: 2;
+	color: white;
+	font-size: 10.6em;
+}
+
+.tainoBackground {
+	position: absolute;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+	bottom: 0;
+	-webkit-filter: blur(5px);
+}
+
+.tainoText, .barcelonaText {
+	font-family: Archer Pro;
+	font-weight: 700;
+	position: absolute;
+	width: 80%;
+	text-align: center;
+	bottom: 0;
+	z-index: 2;
+	color: white;
+	font-size: 2.25em;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.barcelonaBackground {
+	width: 100vw;
+	height: 100vh;
+	top: 0px;
+	background-image: url(../assets/barcelonaBackground.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% center;
+	-webkit-transform: scale(1, 1);
+	        transform: scale(1, 1);
+	z-index: 0;
+	opacity: 1;
+	position: absolute;
+	-webkit-filter: blur(5px) brightness(85%);
+}
+
+.frame1 {
+  top: 0px;
+}
+
+.half1 {
+  background-image: url(../assets/tainoVillage.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 50%;
+  background-position: 0% center;
+  background-size: cover;
+}
+
+.half2 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  background-image: url(../assets/tainoVillage.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0% center;
+  background-size: cover;
+}
+
+.africaBackground {
+	z-index: -2;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	-webkit-filter: brightness(50%);
+}
+
+.africaText {
+	font-family: Archer Pro;
+	font-weight: 700;
+	position: absolute;
+	width: 80%;
+	text-align: center;
+	bottom: 0;
+	z-index: -1;
+	color: white;
+	font-size: 2.25em;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.africaHeader {
+	font-family: Novecento;
+	font-weight: 700;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+	z-index: -1;
+	color: white;
+	font-size: 10.6em;
+}
+
+.linManuelMiranda {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: -8;
+}
+
+#musicVideo {
+	display: none;
+	position: absolute;
+	z-index: -200000;
+}
+
+.tembleque, .bacalao, .bordonua, .cuatro, .tiple {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+}
+
+.footer {
+    box-sizing: border-box;
+    padding-top: 190px;
+    height: 300px;
+}
+
+.elevator {
+    text-align: center;
+    cursor: pointer;
+    width: 140px;
+    margin: auto;
+    position: absolute;
+}
+
+.elevator:hover {
+    opacity: 0.7;
+    position: absolute;
+}
+
+.elevator svg {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    position: absolute;
+    fill: #ffffff;
+    z-index: 10000;
+    left: 50vw;
+    right: 50vw;
+    bottom: -77.5vh;
+}
+
+.collage {
+	font-size: 1em;
+	color: white;
+	text-decoration: none;
+}
